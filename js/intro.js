@@ -52,15 +52,30 @@ function isInView(element) {
     );
 }
 
+
 const clientpic = document.querySelectorAll(".client-list");
 const parclient = document.querySelectorAll(".par-client");
 
-
+// let desi1Flag = false
 let clientpicFlag = false
 let parclientFlag = false
 
 
 document.addEventListener("scroll", function() {
+    
+    // if(!desi1Flag){
+    //     desi1.forEach((desi1) => {
+    //         if( !desi1.classList.contains('des1--visible')){
+    //                 if (isInView(desi1)){
+    //             desi1.classList.add("des1--visible");
+    //             } 
+    //         }
+    //         else{
+    //             desi1Flag = true
+    //         }
+    //     });
+    // }
+
     if(!clientpicFlag){
         clientpic.forEach((clientpic) => {
             if( !clientpic.classList.contains('client-list--visible')){
@@ -140,7 +155,7 @@ const navbut = gsap.utils.toArray( '.nav-container' );
             } );
         } );
 
-// About Page Clip Path
+// About Page Clip Pathwawa
 
 function mouseMove() {
     console.log('test')
