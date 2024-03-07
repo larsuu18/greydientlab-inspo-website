@@ -155,7 +155,7 @@ const navbut = gsap.utils.toArray( '.nav-container' );
             } );
         } );
 
-// About Page Clip Pathwawa
+// About Page Clip Path
 
 function mouseMove() {
     console.log('test')
