@@ -324,6 +324,14 @@ body header .top-bar li:last-child a {
   background-color: transparent;
   transition: background-color 0.4s;
 }
+.view_button span {
+  color: #fff;
+  line-height: 1;
+  transition: color 0.4s;
+}
+.view_button:hover span {
+  color: #000;
+}
 
 .button-link {
   text-decoration: none;
@@ -331,16 +339,6 @@ body header .top-bar li:last-child a {
 
 .view_button:hover {
   background-color: #fff;
-}
-
-.view_button span {
-  color: #fff;
-  line-height: 1;
-  transition: color 0.4s;
-}
-
-.view_button:hover span {
-  color: #000;
 }
 
 /* Footer */

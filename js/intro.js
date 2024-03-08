@@ -158,14 +158,13 @@ const navbut = gsap.utils.toArray( '.nav-container' );
 // About Page Clip Path
 
 function mouseMove() {
-    console.log('test')
-    $('.title-card-move').each(function() {
-        $(this).on("mousemove", function (e) {
+
+        $('.title-card-move').on("mousemove", function (e) {
+            console.log('test')
             let x = e.clientX;
             let y = e.clientY;
 
             $(this).children('.img-clip').css('clip-path', 'circle(150px at ' + x + 'px ' + y + 'px)');
         });
-    });
 };
 mouseMove()

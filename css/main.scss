@@ -409,6 +409,17 @@ body{
     border: 1px solid #fff;
     background-color: transparent;
     transition: background-color .4s;
+
+    span {
+        color: #fff;
+        line-height: 1;
+        transition: color .4s;
+    
+        
+    }
+    &:hover span {
+        color: #000;
+    }
 }
 
 .button-link{
@@ -419,15 +430,9 @@ body{
     background-color: #fff;
 }
   
-.view_button span {
-    color: #fff;
-    line-height: 1;
-    transition: color .4s;
-}
+
   
-.view_button:hover span {
-    color: #000;
-}
+
 
 /* Footer */
 
