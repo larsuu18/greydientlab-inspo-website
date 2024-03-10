@@ -1,4 +1,10 @@
 <?php
+/*
+Template Name: Front Page
+*/
+?>
+
+<?php
 get_header();
 $ablars = get_field('about_lars');
 $profpic = get_field('profile_pic');

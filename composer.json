@@ -1,0 +1,17 @@
+{
+    "name": "admin/mytheme",
+    "autoload": {
+        "psr-4": {
+            "Admin\\Mytheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lars De Guzman",
+            "email": "larsandrei35@gmail.com"
+        }
+    ],
+    "require": {
+        "stoutlogic/acf-builder": "^1.12"
+    }
+}

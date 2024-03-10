@@ -292,6 +292,7 @@ body header .top-bar li:last-child a {
   z-index: 1;
   margin-left: 75px;
   position: absolute;
+  padding: 30px 0;
   color: white;
 }
 .work-section .wp-title {
@@ -302,6 +303,16 @@ body header .top-bar li:last-child a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.work-section .wp-logo {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.work-section .wp-title {
+  padding-bottom: 10px;
+}
+.work-section .wp-desc {
+  padding-bottom: 30px;
 }
 
 .view_button {

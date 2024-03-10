@@ -81,3 +81,16 @@ register_nav_menus(
 
 );
 
+// Stoutlogic
+require_once get_template_directory() . '/vendor/autoload.php';
+
+$banner = new StoutLogic\AcfBuilder\FieldsBuilder('banner');
+$banner
+    ->addText('title')
+    ->addWysiwyg('content')
+    ->setLocation('page_template', '==', 'front-page.php');
+
+add_action('acf/init', function() use ($banner) {
+   acf_add_local_field_group($banner->build());
+});
+
