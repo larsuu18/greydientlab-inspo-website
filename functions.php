@@ -88,6 +88,7 @@ $banner = new StoutLogic\AcfBuilder\FieldsBuilder('banner');
 $banner
     ->addText('title')
     ->addWysiwyg('content')
+    ->addImage('background_image')
     ->setLocation('page_template', '==', 'front-page.php');
 
 add_action('acf/init', function() use ($banner) {
