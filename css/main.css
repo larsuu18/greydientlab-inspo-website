@@ -270,6 +270,7 @@ body header .top-bar li:last-child a {
 
 .des1 {
   text-align: center;
+  padding: 10px 0;
   transform: translateY(20px);
   opacity: 0;
   transition: 0.5s;
