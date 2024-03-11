@@ -422,6 +422,8 @@ body header .top-bar li:last-child a {
   cursor: none;
 }
 .about-sec1 .img-path {
+  display: flex;
+  justify-content: center;
   -o-object-fit: cover;
      object-fit: cover;
   top: 0;

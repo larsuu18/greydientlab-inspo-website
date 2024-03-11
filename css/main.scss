@@ -447,9 +447,6 @@ body{
 .view_button:hover {
     background-color: #fff;
 }
-  
-
-  
 
 
 /* Footer */
@@ -536,6 +533,8 @@ body{
     }
 
     .img-path{
+        display: flex;
+        justify-content: center;
         object-fit: cover;
         top: 0;
         left: 0;

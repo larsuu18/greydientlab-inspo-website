@@ -86,12 +86,64 @@ require_once get_template_directory() . '/vendor/autoload.php';
 
 $banner = new StoutLogic\AcfBuilder\FieldsBuilder('banner');
 $banner
-    ->addText('title')
-    ->addWysiwyg('content')
-    ->addImage('background_image')
+
+    ->addText('about_lars')
+    ->addImage('profile_pic')
+    ->addText('client_par')
+    ->addText('button_text')
+    ->addText('logo')
+    ->addImage('des_1',
+        ['return_format' => 'url'])
+    ->addImage('des_2',
+        ['return_format' => 'url'])
+    ->addFile('wp_video1',
+        ['return_format' => 'url'])
+    ->addFile('wp_video2',
+        ['return_format' => 'url'])
+    ->addFile('wp_video3',
+        ['return_format' => 'url'])
+    ->addFile('wp_video4',
+        ['return_format' => 'url'])
+    ->addImage('shiz_logo',
+        ['return_format' => 'url'])
+    ->addImage('yuklog',
+        ['return_format' => 'url'])
+    ->addImage('navi_log',
+        ['return_format' => 'url'])
+    ->addImage('ashina_log',
+        ['return_format' => 'url'])
+    ->addRepeater('client_link')
+            ->addImage('cli_pic',[
+            'return_format' => 'url'
+        ])
+        ->addLink('cli_link',[
+            'return_format' => 'url'
+        ])
+    ->endRepeater()
+    ->addRepeater('social_links')
+        ->addImage('sl_image',[
+            'return_format' => 'url'
+        ])
+        ->addLink('sl_link',[
+            'return_format' => 'url'
+        ])
+    ->endRepeater()
     ->setLocation('page_template', '==', 'front-page.php');
 
 add_action('acf/init', function() use ($banner) {
    acf_add_local_field_group($banner->build());
+});
+
+$banner2 = new StoutLogic\AcfBuilder\FieldsBuilder('banner2');
+$banner2
+
+    ->addImage('ren_img',
+    ['return_format' => 'url'])
+    ->addImage('unren_img',
+    ['return_format' => 'url'])
+    ->setLocation('page_template', '==', 'about-page.php');
+
+add_action('acf/init', function() use ($banner2) {
+   acf_add_local_field_group($banner2->build());
 });
 
