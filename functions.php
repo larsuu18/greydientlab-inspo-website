@@ -15,6 +15,10 @@ function load_css()
             array(), false, 'all' );
         wp_enqueue_style('Kanit');
 
+        wp_register_style('atropos', get_template_directory_uri() . 'path/to/atropos.css', 
+            array(), false, 'all' );
+        wp_enqueue_style('atropos');
+
         wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', 
             array(), false, 'all' );
         wp_enqueue_style('bootstrap');

@@ -7,17 +7,29 @@ Template Name: Contact Page
 
 <?php get_header();?>
 
-<section class="page-wrap">
-<div class="container">
 
 
-        <h1><?php the_title();?></h1>
+<?php 
 
+$args = array(
+        'role' => 'author',
+        'fields' => 'ID',
+    );
 
-        <?php get_template_part('includes/section', 'content');?>
+    $user_ids = get_users($args);
+    
+$homepageEvents = new WP_Query(array(
+        'posts_per_page' => -1,
+        'post_type' => 'my-custom-post-type',
+        'author__in' => $user_ids
+));
 
-</div>
-</section>
+while($homepageEvents -> have_posts()){
+        $homepageEvents -> the_post(); ?>
+        <li class="posttype"><?php the_title();?></li>
+        <?php }
+        ?>
+
 
 
 <?php get_footer();?>

@@ -505,4 +505,9 @@ body header .top-bar li:last-child a {
     flex-direction: column;
     width: 100%;
   }
+}
+.posttype {
+  display: flex;
+  justify-content: center;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
